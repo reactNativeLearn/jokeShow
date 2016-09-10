@@ -4,6 +4,7 @@ import android.app.Application;
 import android.util.Log;
 
 import com.facebook.react.ReactApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -37,6 +38,7 @@ public class MainApplication extends Application implements ReactApplication {
         // have it, you can run "code-push deployment ls <appName> -k" to retrieve your key.
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new VectorIconsPackage(),
             new CodePush("ylHKUbEPfKGcCm29abChKL__u0l-Vyd1ONQoW", MainApplication.this, BuildConfig.DEBUG)
         );
     }
